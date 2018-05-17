@@ -1,4 +1,4 @@
-<div class="conversation-block">
+<div class="block conversation-block">
     <% if $ConversationBubbles %>
         <% loop $ConversationBubbles %>
             <div class="conversation-bubble $Align" style="background-color:#$BubbleColor;">

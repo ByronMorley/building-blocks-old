@@ -314,6 +314,9 @@
 /*-----------------------------------------
              BLOCK.LESS
 -----------------------------------------*/
+.block {
+  margin-bottom: 10px;
+}
 .block.video-block video {
   width: 100%;
   height: auto;
@@ -361,13 +364,6 @@
 .block.image-block img.right {
   float: right;
 }
-.block.link-block h2 {
-  font-weight: bold;
-  font-size: 18px;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-  border-bottom: 1px solid #000000;
-}
 .block.link-block .link-elements {
   margin-left: 40px;
 }
@@ -389,9 +385,6 @@
 .block.link-block .link-elements > li a span {
   text-decoration: underline;
 }
-.block.link-block .link-elements > li a:hover i {
-  color: #000000;
-}
 .block.link-block .link-elements > li .link-prompt {
   margin-right: 5px;
   font-weight: bold;
@@ -409,15 +402,3 @@
   font-size: 12px;
   text-align: center;
 }
-
-/*--------------------------- CONFIG.LESS --------------------------------*/
-/*  1170px  */
-/*  1170px  */
-/*  970px   */
-/*  750px   */
-/*  100%    */
-/*  100%    */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&amp;subset=latin-ext);
-/*-----------------------------------------
-             VIDEO.LESS
------------------------------------------*/

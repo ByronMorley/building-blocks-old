@@ -1,4 +1,4 @@
-<div class="reveal-answer-block" id="reveal-answer-$ID">
+<div class="block reveal-answer-block" id="reveal-answer-$ID">
 
     <div class="custom-panel-list closed">
 

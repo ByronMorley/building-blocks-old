@@ -1,4 +1,4 @@
-<div class="you-tube-block $width">
+<div class="block you-tube-block $width">
     <% if $ShowTitle %>
         <h2>$Title</h2>
     <% end_if %>

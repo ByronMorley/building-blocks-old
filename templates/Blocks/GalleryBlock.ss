@@ -1,4 +1,4 @@
-<div class="gallery-block">
+<div class="block gallery-block">
     <% if $ShowTitle %>
         <h2>$Title</h2>
     <% end_if %>

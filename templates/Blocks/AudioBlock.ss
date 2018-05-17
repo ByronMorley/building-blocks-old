@@ -1,4 +1,4 @@
-<div class="audio-block">
+<div class="block audio-block">
     <% if $ShowTitle %>
         <h2>$Title</h2>
     <% end_if %>

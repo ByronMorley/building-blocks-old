@@ -1,5 +1,4 @@
-<div class="text-block">
-
+<div class="block text-block">
     <% if $Content %>
 		<div class="panel rounded content">
             <% if $ShowTitle %>
