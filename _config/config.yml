@@ -1,0 +1,7 @@
+---
+Name: Building_blocks
+After: 'framework/*','cms/*'
+---
+Page:
+  extensions:
+    - Building_blocks
