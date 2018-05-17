@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "gruntfile.js",
-  "dependencies": {
-    "bootstrap": "^3.3.6",
-    "jquery": "^2.1.4",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
-  },
   "devDependencies": {
     "assemble-less": "^0.7.0",
     "grunt": "^0.4.5",
