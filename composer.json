@@ -11,9 +11,11 @@
   "support": {
     "issues": "http://github.com/your-vendor-name/module-name/issues"
   },
+  "config": {
+    "vendor-dir": "../"
+  },
   "require": {
-    "silverstripe/cms": "~3.1",
-    "silverstripe/framework": "~3.1"
+    "micschk/silverstripe-chunkeduploadfield": "^1.1"
   },
   "extra": {
     "installer-name": "building-blocks",
