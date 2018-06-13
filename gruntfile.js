@@ -1,11 +1,10 @@
-var webpackDevConfig = require('./webpack.config.js');
-
 module.exports = function (grunt) {
     require('jit-grunt')(grunt);
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-webpack');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+
 
     var pkgConfig = grunt.file.readJSON('package.json');
 
@@ -13,8 +12,22 @@ module.exports = function (grunt) {
 
         pkg: pkgConfig,
 
-
+        cssmin: {
+            options: {
+                mergeIntoShorthands: false,
+                roundingPrecision: -1,
+                sourceMap:true
+            },
+            target: {
+                files: {
+                    'css/style.min.css': ["css/style.css"]
+                }
+            }
+        },
         uglify: {
+            options: {
+                sourceMap:true
+            },
             build: {
                 src: 'js/main.js',
                 dest: 'js/main.min.js'
@@ -45,36 +58,26 @@ module.exports = function (grunt) {
                 tasks: ['concat', 'uglify:build'],
                 options: {
                     atBegin: true,
-                    livereload:true
+                    livereload: true
                 }
             },
             styles: {
                 files: ['less/**/*.less'], // which files to watch
-                tasks: ['less'],
+                tasks: ['less', 'cssmin'],
                 options: {
                     nospawn: true,
-                    livereload:true
+                    livereload: true
                 }
             },
             templates: {
                 files: ['templates/**/*.ss'], // which files to watch
                 options: {
                     nospawn: true,
-                    livereload:true
+                    livereload: true
                 }
-            }
-        },
-        webpack: {
-            options: webpackDevConfig,
-            start: {
-            },
-            watch: {
-                watch: true,
-                keepalive: true
             }
         }
     });
 
-    grunt.registerTask('watchpack', ['webpack:watch']);
-    grunt.registerTask('default', [ 'less', 'concat', 'watch', 'uglify']);
+    grunt.registerTask('default', ['less', 'concat', 'uglify', 'cssmin', 'watch']);
 };
