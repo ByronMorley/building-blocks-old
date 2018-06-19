@@ -14,16 +14,19 @@ function checkNavTabs($block) {
     var $panes = $block.find('.tab-pane');
 
     if (localStorage.getItem('tabs') === null) {
+        console.log('null');
         $tabs.first().addClass('show active');
         $panes.first().addClass('show active');
-        localStorage.setItem('tabs', $tabs.first().attr('id'));
+        localStorage.setItem('tabs', 0);
 
     } else {
+
         var index = localStorage.getItem('tabs');
+
+        console.log(index);
         var $tab = $tabs.eq(index);
         $tab.addClass('show active');
         $($tab.attr('href')).addClass('show active');
     }
-    localStorage.clear();
 }
 
