@@ -3,24 +3,26 @@
 class SectionTextBlock extends Section
 {
 
-    private static $db = array(
-        'Content' => 'HTMLText'
-    );
+	private static $db = array(
+		'Content' => 'HTMLText'
+	);
 
-    public function getCMSFields()
-    {
-        $fields = parent::getCMSFields();
+	public static $has_one = array(
+		'SectionTabBlock' => 'SectionTabBlock'
+	);
 
-        $fieldList = FieldList::create(
-            HtmlEditorField::create('Content')
-        );
+	public function getCMSFields()
+	{
+		$fields = parent::getCMSFields();
 
-        $fields->addFieldsToTab('Root.Main',
-            $fieldList
-        );
+		$fieldList = FieldList::create(
+			HtmlEditorField::create('Content')
+		);
 
-        return $fields;
-    }
+		$fields->addFieldsToTab('Root.Main',
+			$fieldList
+		);
 
-
+		return $fields;
+	}
 }

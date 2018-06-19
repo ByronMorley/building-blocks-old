@@ -180,7 +180,30 @@
              BLOCK.LESS
 -----------------------------------------*/
 .block {
+  position: relative;
   margin-bottom: 10px;
+}
+.block h1,
+.block h2,
+.block h3,
+.block h4,
+.block h5,
+.block h6 {
+  font-weight: 700;
+}
+.block h2 {
+  margin-bottom: 10px;
+  color: #6E348C;
+  font-size: 20px;
+}
+.block h3 {
+  font-size: 16px;
+}
+.block.pagination-block {
+  margin-bottom: 100px;
+}
+.block.video-block .description {
+  margin-bottom: 15px;
 }
 .block.video-block video {
   width: 100%;
@@ -266,6 +289,7 @@
   font-style: italic;
   font-size: 12px;
   text-align: center;
+  margin: 5px 0;
 }
 
 /*--------------------------- CONFIG.LESS --------------------------------*/
@@ -484,10 +508,34 @@ img.right {
 /*  100%    */
 /*  100%    */
 /*-----------------------------------------
+            PAGINATION.LESS
+-----------------------------------------*/
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #6E348C;
+  border-color: #6E348C;
+}
+.pagination.mx-right {
+  margin-left: auto!important;
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
           REVEAL ANSWER.LESS
 -----------------------------------------*/
 .reveal-answer-block {
   margin-bottom: 20px;
+}
+
+.tab-block .nav-tabs {
+  margin-bottom: 10px;
 }
 
 /*--------------------------- CONFIG.LESS --------------------------------*/

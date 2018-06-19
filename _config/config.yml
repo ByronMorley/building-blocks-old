@@ -5,3 +5,5 @@ After: 'framework/*','cms/*'
 Page:
   extensions:
     - Building_blocks
+SSViewer:
+  rewrite_hash_links: false

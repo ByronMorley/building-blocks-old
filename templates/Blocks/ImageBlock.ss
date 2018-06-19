@@ -1,5 +1,5 @@
 <div class="block image-block">
-    <% if $ShowTitle %>
+	<% if $ShowTitle %>
         <h2>$Title</h2>
     <% end_if %>
     <% if $Photo %>
@@ -9,4 +9,5 @@
             <div class="caption">$caption</div>
         <% end_if %>
     <% end_if %>
+
 </div>

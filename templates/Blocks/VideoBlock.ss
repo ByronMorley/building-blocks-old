@@ -3,7 +3,7 @@
         <% with $VideoFile %>
 		<div class="panel rounded content">
 			<h2>$Title</h2>
-			<h3>$Content</h3>
+			<h3 class="description">$Content</h3>
 			<div class="video-wrapper">
 				<video id="video_1" class="$Title video-js vjs-default-skin" width="640px" height="380px"
 					   controls preload="none" poster='$PosterImage.Filename'>
