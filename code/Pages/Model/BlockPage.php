@@ -1,10 +1,9 @@
 <?php
 
-class BlockPage extends Page {
+class BlockPage extends Page
+{
 
-	private static $db = array(
-
-	);
+	private static $db = array();
 
 	private static $has_one = array();
 
