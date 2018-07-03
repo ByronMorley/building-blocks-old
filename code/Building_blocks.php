@@ -14,8 +14,15 @@ class Building_blocks extends DataExtension {
 
 	public function contentControllerInit()
 	{
-		Requirements::css(BUILDING_BLOCKS_DIR .'/css/style.css');;
+
+		//Requirements::css('//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+		Requirements::css(BUILDING_BLOCKS_DIR .'/css/style.css');
+		Requirements::javascript('//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js');
+		Requirements::javascript('//code.jquery.com/jquery-1.11.1.min.js"');
+
+
 		Requirements::javascript(BUILDING_BLOCKS_DIR .'/js/main.min.js');
+
 	}
 
 	public function getCMSFields()

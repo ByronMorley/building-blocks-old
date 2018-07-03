@@ -1,6 +1,7 @@
 <div class="container">
 	<main>
 		<h1 class="title">$Title</h1>
+        <% include BreadcrumbNavigationTemplate %>
 		<div class="menu-page">
 			<ul class="menu-3">
                 <% if $Children %>

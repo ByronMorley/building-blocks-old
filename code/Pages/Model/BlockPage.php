@@ -3,7 +3,9 @@
 class BlockPage extends Page
 {
 
-	private static $db = array();
+	private static $db = array(
+		'Tabbed' => 'boolean'
+	);
 
 	private static $has_one = array();
 
@@ -14,6 +16,8 @@ class BlockPage extends Page
 	public function getCMSFields()
 	{
 		$fields = parent::getCMSFields();
+
+		$fields->addFieldToTab('Root.Main', CheckboxField::create('Tabbed'));
 
 		$fields->removeByName('Content');
 
