@@ -55,6 +55,10 @@ class Section extends DataObject
         return $count + 1;
     }
 
+	public function PageTitle (){
+		return $this->Page()->Title;
+	}
+
     protected function removeEmptyTabs(FieldList $fields)
     {
         foreach ($fields as $field) {

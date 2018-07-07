@@ -1,21 +1,8 @@
 <div class="container">
 	<main>
-		<div class="pane title-pane">
-			<div class="section left rel">
-				<h1 class="title abs bottom left">$Title</h1>
-			</div>
-			<div class="section right">
-				<div class="icon-rack-wrapper">
-					<ul class="icon-rack abs bottom right">
-						<li><a href="#"><i class="icon-printer"></i></a></li>
-						<li><a href="#"><i class="icon-download"></i></a></li>
-						<li><a href="$BlueLink"><i class="icon-presentation"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
 
-            <% include BreadcrumbNavigationTemplate %>
+        <% include TitlePane %>
+        <% include BreadcrumbNavigationTemplate %>
 
         <% if $Tabbed %>
 			<div class="sm-hide xs-hide xxs-hide">

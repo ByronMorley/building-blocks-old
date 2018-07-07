@@ -15,11 +15,16 @@ class Building_blocks extends DataExtension {
 	public function contentControllerInit()
 	{
 
-		//Requirements::css('//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
-		Requirements::css(BUILDING_BLOCKS_DIR .'/css/style.css');
-		Requirements::javascript('//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js');
-		Requirements::javascript('//code.jquery.com/jquery-1.11.1.min.js"');
+		/*  -- Stylesheets --*/
+		Requirements::css('twitter/bootstrap/dist/css/bootstrap.min.css');
+		Requirements::css('components/font-awesome/css/font-awesome.min.css');
 
+		Requirements::css(BUILDING_BLOCKS_DIR .'/css/style.css');
+
+
+		/*  -- Javascript --*/
+		Requirements::javascript('components/jquery/jquery.min.js');
+		Requirements::javascript('twitter/bootstrap/dist/js/bootstrap.min.js');
 
 		Requirements::javascript(BUILDING_BLOCKS_DIR .'/js/main.min.js');
 
@@ -55,7 +60,7 @@ class Building_blocks extends DataExtension {
 				'SectionLinkBlock' => SectionLinkBlock::get_section_type(),
 				'SectionVideoBlock' => SectionVideoBlock::get_section_type(),
 				'SectionActivityBlock' => SectionActivityBlock::get_section_type(),
-				'SectionTabBlock' => SectionTabBlock::get_section_type()
+				'SectionPoemBlock' => SectionPoemBlock::get_section_type(),
 			)
 		);
 
