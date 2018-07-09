@@ -1,0 +1,13 @@
+@media print {
+
+    body {
+        background-color:#000;
+    }
+
+  aside {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+}

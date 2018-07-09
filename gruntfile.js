@@ -38,7 +38,7 @@ module.exports = function (grunt) {
                 options: {
                     paths: ["css"]
                 },
-                files: {"css/style.css": "less/**/*.less"}
+                files: {"css/style.css": "less/**/*.less", "css/pdf.css": "print/pdf.less", "css/print.css": "print/print.less" }
             }
         },
         concat: {

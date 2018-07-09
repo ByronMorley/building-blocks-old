@@ -19,7 +19,8 @@ class Building_blocks extends DataExtension {
 		Requirements::css('twitter/bootstrap/dist/css/bootstrap.min.css');
 		Requirements::css('components/font-awesome/css/font-awesome.min.css');
 
-		Requirements::css(BUILDING_BLOCKS_DIR .'/css/style.css');
+		Requirements::css(BUILDING_BLOCKS_DIR .'/css/style.min.css');
+		Requirements::css(BUILDING_BLOCKS_DIR .'/css/print.css', 'print');
 
 
 		/*  -- Javascript --*/

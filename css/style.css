@@ -460,6 +460,35 @@ img.right {
 /*  100%    */
 /*  100%    */
 /*-----------------------------------------
+                POEM.LESS
+-----------------------------------------*/
+.block.poem-block h3 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.block.poem-block h3 span {
+  display: inline-block;
+  color: #9D9D9D;
+}
+.block.poem-block .content {
+  padding: 20px;
+  font-size: 16px;
+  color: #000;
+  line-height: 36px;
+}
+.fade:not(.show) {
+  opacity: 1;
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
           REVEAL ANSWER.LESS
 -----------------------------------------*/
 .reveal-answer-block {

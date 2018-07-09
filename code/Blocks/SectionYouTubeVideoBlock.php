@@ -4,7 +4,7 @@ class SectionYouTubeVideoBlock extends Section
 {
 
 	private static $db = array(
-		'link' => 'VarChar(100)',
+		'src' => 'VarChar(100)',
 		'embedCode' => 'Varchar(20)',
 		'caption' => 'VarChar(100)',
 		'width' => 'VarChar(30)',
