@@ -440,6 +440,71 @@ img.right {
 /*  100%    */
 /*  100%    */
 /*-----------------------------------------
+            LOGO.LESS
+-----------------------------------------*/
+.logo-block ul {
+  overflow: hidden;
+}
+@media only screen and (min-width: 1400px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 769px) and (max-width: 991px) {
+  .logo-block ul.right li {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+  .logo-block ul.left li {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+  .logo-block ul.center li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .logo-block ul.center li img {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.logo-block li {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+.logo-block li:last-child {
+  margin-bottom: 0px;
+}
+.logo-block li img {
+  max-height: 120px;
+  width: auto;
+}
+@media only screen and (max-width: 479px), only screen and (min-width: 480px) and (max-width: 768px) {
+  .logo-block li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .logo-block li img {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
             PAGINATION.LESS
 -----------------------------------------*/
 .page-item.active .page-link {

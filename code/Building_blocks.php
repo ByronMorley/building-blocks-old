@@ -62,6 +62,7 @@ class Building_blocks extends DataExtension {
 				'SectionVideoBlock' => SectionVideoBlock::get_section_type(),
 				'SectionActivityBlock' => SectionActivityBlock::get_section_type(),
 				'SectionPoemBlock' => SectionPoemBlock::get_section_type(),
+				'SectionLogoBlock' => SectionLogoBlock::get_section_type(),
 			)
 		);
 
